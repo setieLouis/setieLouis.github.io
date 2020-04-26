@@ -1,0 +1,128 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    /**border: 1px solid black;/**/
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+
+    width: 815px;
+    margin:auto;
+
+
+}
+
+
+
+
+/************ blocker  **************/
+.block_wrapper{
+    display:  flex;
+
+    flex-wrap:  wrap ;
+    /**border: 1px solid black;**/
+
+
+}
+
+
+.block{
+
+    margin:10px;
+    width:  250px;
+    height: 200px;
+}
+
+
+.block_item{
+    margin: 40px;
+}
+
+
+section {
+    margin-top: 20px;
+}
+
+
+header{
+    width: 815px;
+    margin:auto;
+}
+
+
+.sec_title{
+    font-size:25px;
+}
+
+
+.profile_wrapper{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:144px;
+    margin: 10px;
+    height:200px;
+}
+
+.profile_foto{
+    width:144px;
+    height:180px;
+    border-radius: 80px;
+
+}
+.text{
+    width:500px; margin: 10px;  height:200px;
+}
+
+
+
+/********* Overlay classs ********/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.y_none{
+    overflow-y: hidden;
+}
+
+/** pdf overlay **/
+.pdf_wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iframe_wrapper{
+    width: 90%;
+    height: 90%;
+}
+
+/** video overlay **/
+.video_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100% ;
+
+}
+
+.video_wrapper p{
+    width:800px;
+    margin-bottom:10px;
+    color: #fff;
+}
