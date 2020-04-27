@@ -7,6 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 main{
 
     width: 815px;
@@ -42,16 +43,13 @@ main{
 }
 
 
-section {
-    margin-top: 20px;
-}
+
 
 
 header{
     width: 815px;
     margin:auto;
 }
-
 
 .sec_title{
     font-size:25px;
@@ -78,20 +76,25 @@ header{
 }
 
 
-
 /********* Overlay classs ********/
 .overlay {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: #fff;
     overflow-x: hidden;
     transition: 0.5s;
+    border:1px solid black;
 }
+#overlay_content{
+    height: 100%;
+    border:1px solid black;
+    background-color: #fff;
+}
+
 
 .y_none{
     overflow-y: hidden;

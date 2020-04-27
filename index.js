@@ -31,7 +31,7 @@ document.getElementById("p1").addEventListener('click', function () {
 
 //**************** Overlay *************************************
 function overlay(element) {
-   let overlay =  document.getElementById("overlay");
+   let overlay =  document.getElementById("overlay_content");
 
    // insert chiild
     overlay.append(element);
@@ -50,7 +50,8 @@ function closeOverlay(element, event) {
        let overlay =  document.getElementById("overlay");
         overlay.style.width = "0%";
         overlay.setAttribute('class','overlay' );
-        let first = overlay.firstChild;
+
+        let first = document.getElementById("overlay_content").firstChild;
         if(first)
              overlay.removeChild(first);
         document.getElementById("corpo").removeAttribute("class");
@@ -61,18 +62,18 @@ function closeOverlay(element, event) {
 // Cv overlay body
 function pdfSec(src) {
 
-      let  sec =  document.createElement('section');
-      sec.setAttribute('class', 'pdf_wrapper');
-      let div = document.createElement('div');
-      div.setAttribute('class', 'iframe_wrapper');
-      let frame = document.createElement('iframe') ;
-      frame.setAttribute('src', src + '#page=1&zoom=120');
-      frame.setAttribute('width',   '100%');
-      frame.setAttribute('height',  '100%');
-      frame.setAttribute('style', src + 'border: none;');
+    let  sec =  document.createElement('section');
+    sec.setAttribute('class', 'pdf_wrapper');
+    let div = document.createElement('div');
+    div.setAttribute('class', 'iframe_wrapper');
+    let frame = document.createElement('iframe') ;
+    frame.setAttribute('src', src + '#page=1&zoom=120');
+    frame.setAttribute('width',   '100%');
+    frame.setAttribute('height',  '100%');
+    frame.setAttribute('style', src + 'border: none;');
 
-      div.append(frame);
-      sec.append(div);
+    div.append(frame);
+    sec.append(div);
       return sec;
 
     /**
@@ -125,12 +126,13 @@ const success = function(data){
     let resp= data.json()
         .then(data => {
             let sec = document.createElement('section');
-            sec.setAttribute('style', 'margin:100px');  //'markdown-body' )
+            sec.setAttribute('style', 'margin-bottom:20px');  //'markdown-body' )
             let div = document.createElement('div');
             div.setAttribute('class','markdown-body')
 
             let mkd = utf8Base64Decoder(data.content);
             let body = md.render(mkd);
+            console.log(body)
             div.innerHTML = body;
             sec.append(div)
 
