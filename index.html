@@ -2,8 +2,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-
-
     <link href="index.css" rel="stylesheet">
     <link href="githubMD.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -11,11 +9,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/889d8bc543.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
     <title>Quick Presentation</title>
-
     <style>
+        #project{
+            width: 900px;
+            margin: auto;
+            border: 1px solid transparent;
+            align-items: center
+        }
 
+        #project h3{
+            margin:10px 10px 30px 10px;
+            color:#181b2f;
+
+            font-family: 'Noto Serif JP', sans-serif;
+            font-size:25px;
+            font-weight: 600;
+        }
+
+        #project > div{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #project > div > div{
+            align-items: center;
+            border:1px solid transparent;
+            width: 350px; height: 300px;
+            margin:10px; display: flex;
+            flex-direction: column
+        }
+        #project > div > div> span{
+            font-size: 70px ;
+            color: #00adef
+        }
+
+        .project_title{
+            color:#182973;
+            font-family: 'Noto Serif JP', sans-serif;
+            font-size:20px;
+            font-weight:400
+        }
+
+        .project_desc{
+            padding: 10px; color:#182973;
+            text-align: center;
+            font-family: 'Noto Serif JP', sans-serif;
+            font-size:13px;
+            font-weight:200
+        }
+
+        .project_tech{
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 5px;
+            text-align: center
+        }
+
+        .project_tech span{
+            background: #dfe2e5;
+            color:#4f5469;
+            margin: 2px;
+            padding: 5px;
+            border-radius: 2px;
+            font-family: 'Noto Serif JP', sans-serif;
+            font-size:15px;
+            font-weight:900;
+        }
+        #project > div > div div{
+            padding: 10px 20px;
+            color:#00adef;
+            font-family: 'Noto Serif JP', sans-serif;
+            font-weight:500;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -26,7 +97,6 @@
 <section id="main">
 
     <div id="head"><h1 style="">Quick Presentation</h1></div>
-
     <div id="info">
         <section id="info_name">
             <img src="img/pro.jpg"  alt="Avatar">
@@ -36,94 +106,10 @@
             </p>
         </section>
         <hr>
-
-        <section id="info_file">
-            <!--div>
-                <span id="f1"><i class="fas fa-file"></i></span>
-                <p>Curriculum vitae</p>
-            </div>
-            <div>
-                <span><i class="fas fa-file-video"></i></i></span>
-                <p>Video presentation</p>
-            </div-->
-        </section>
+        <section id="info_file"></section>
     </div>
-
-
-
-    <section style="width: 95%; margin: auto; border: 1px solid transparent; align-items: center">
-        <h3 style="text-align: center; margin:30px;  color:#181b2f; font-family: 'Noto Serif JP', sans-serif; font-size:30px; font-weight:600">Progetti</h3>
-        <div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center">
-
-            <div style="align-items: center; border:1px solid transparent; width: 350px; height: 300px;  margin:10px; display: flex; flex-direction: column">
-                <span style="font-size: 70px ; color: #00adef"><i class="devicon-javascript-plain"></i></span>
-                <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:20px; font-weight:400">Lootbill</p>
-                <p style="padding: 10px; color:#182973; text-align: center; font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:200">Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing e incididunt u</p>
-
-                <p style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 5px; text-align: center">
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Java</span>
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Tdd</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">JUnit</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Jacoco</span>
-
-                </p>
-                <div id="p1" style="border: none;
-            background-color: transparent;
-            padding: 10px 20px;
-            color:#00adef;
-             font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:500;
-            font-size: 16px;
-            cursor: pointer;
-            display: inline-block;">Read more</div>
-            </div>
-
-
-            <div style="align-items: center; border:1px solid transparent; width: 350px; height: 300px;  margin:10px; display: flex; flex-direction: column">
-                <span style="font-size: 70px ; color: #00adef"><i class="devicon-nodejs-plain"></i></span>
-                <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:20px; font-weight:400">Lootbill</p>
-                <p style="padding: 10px; color:#182973; text-align: center; font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:200">Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing e incididunt u</p>
-
-                <p style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 5px; text-align: center">
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Java</span>
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Tdd</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">JUnit</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Jacoco</span>
-
-                </p>
-                <button style="border: none;
-            background-color: transparent;
-            padding: 10px 20px;
-            color:#00adef;
-             font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:500;
-            font-size: 16px;
-            cursor: pointer;
-            display: inline-block;">Read more</button>
-            </div>
-
-
-            <div style="align-items: center; border:1px solid transparent; width: 350px; height: 300px;  margin:10px; display: flex; flex-direction: column">
-                <span style="font-size: 70px ; color: #00adef"><i class="devicon-java-plain-wordmark"></i></span>
-                <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:20px; font-weight:400">Lootbill</p>
-                <p style="padding: 10px; color:#182973; text-align: center; font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:200">Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing e incididunt u</p>
-
-                <p style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 5px; text-align: center">
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Java</span>
-                    <span style="background: #dfe2e5; color:#4f5469; padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Tdd</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">JUnit</span>
-                    <span style="background: #dfe2e5; color:#4f5469;padding: 5px; border-radius: 2px; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:900">Jacoco</span>
-
-                </p>
-                <button style="border: none;
-            background-color: transparent;
-            padding: 10px 20px;
-            color:#00adef;
-             font-family: 'Noto Serif JP', sans-serif;  font-size:13px; font-weight:500;
-            font-size: 16px;
-            cursor: pointer;
-            display: inline-block;">Read more</button>
-            </div>
-        </div>
-
+    <section id="project">
+        <h3>Progetti</h3>
     </section>
 </section>
 
@@ -135,19 +121,71 @@
     <div id="overlay_content"></div>
 </section>
 
-
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
 <script src="projects.js"></script>
 <script src="httpCaller.js"></script>
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 <script type="text/javascript">
-    /**
-     *
-     <div>
-     <span><i class=""></i></i></span>
-     <p></p>
-     </div>
-     **/
+
+    // PROJECTS
+    const projectList = {
+        owner : 'setieLouis',
+        items:[
+            {
+                icon : 'devicon-javascript-plain',
+                title: 'Lootbill',
+                desc: 'Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing e incididunt u',
+                tags:['Java','Tdd','JUnit','Jaccoco'],
+                repository: 'LAB2_SOL'
+            }
+        ]
+    }
+
+    function addProjects(){
+        const divWrapper = document.createElement('div');
+        const items = projectList.items;
+
+       for(let i = 0; i < items.length; i++){
+            const div = document.createElement('div');
+            const span = document.createElement('span');
+            const itag = document.createElement('i');
+            itag.setAttribute('class', items[i].icon );
+            span.append(itag);
+            const p1 = document.createElement('p');
+            p1.setAttribute('class', 'project_title');
+            p1.append(items[i].title);
+
+            const p2 = document.createElement('p');
+            p2.setAttribute('class', 'project_desc');
+            p2.append(items[i].desc);
+
+            const p3 = document.createElement('p');
+            p3.setAttribute('class', 'project_tech');
+
+            const tags = items[i].tags
+            let line ="";
+            for (let j = 0; j < tags.length;  j++){
+                const span2 = document.createElement('span');
+                span2.append(tags[j])
+                p3.append(span2);
+            }
+
+
+
+            const button = document.createElement('div');
+            button.append('Read more')
+            button.setAttribute('onclick', 'openProject("' + projectList.owner +   '","' + items[i].repository + '")');
+            div.append(span);
+            div.append(p1);
+            div.append(p2);
+            div.append(p3);
+            div.append(button);
+            divWrapper.append(div);
+        }
+        document.getElementById('project').append(divWrapper);
+    }
+
+    addProjects();
 
     // PRESENTAZIONE FILE
     const files=[
@@ -190,13 +228,18 @@
    // HEADER RIGHT LINKS
     const socials = [
         {
+            icon: 'fab fa-github',
+            title: 'gitHub',
+            link: 'https://github.com/setieLouis/'
+        },
+        {
             icon: 'fab fa-linkedin',
-            social: "linkedin",
+            title: "linkedin",
             link : "https://www.linkedin.com/in/setie-louis-adjambri-3b32ba6a/",
         },
         {
             icon: 'fas fa-paper-plane',
-            social: "mail",
+            title: "mail",
             link : "adjams@live.it",
         }
     ]
@@ -209,6 +252,8 @@
             const social = socials[i];
             const  span = document.createElement('span');
             span.setAttribute('onclick', 'linkSender("'+ social.link + '")');
+            span.setAttribute('title', social.title);
+
             const itag = document.createElement('i');
             itag.setAttribute('class',social.icon)
             span.append(itag);
@@ -233,21 +278,16 @@
 
 
 
-
-
-    // PROJECT OVERLAY
-    let p1 = document.getElementById("p1");
-    p1.addEventListener("click", () =>{
+    function openProject(owner, repository){
         caller(
-            'https://api.github.com/repos/setieLouis/LAB2_SOL/contents/README.md',
+            'https://api.github.com/repos/'  +  owner + '/'+ repository +'/contents/README.md',
             'GET',
             success,
             (error) => console.log(error)
         );
-    });
+    };
 
     document.getElementById("closebtn")
-
         .addEventListener("click", () =>{
             const  main = document.getElementById('main');
             const overlay=  document.getElementById("overlay");
@@ -318,22 +358,6 @@
             });
             on(overlay)
         };
-
-    /**
-     *   <section style="height: 100%">
-     <iframe src="L01.pdf#page=1&amp;zoom=120" width="100%" height="100%" style="border: none;">
-     </iframe>
-     </section>
-     * @param element
-     */
-
-
-
-
-
-
-
-
 
     //====== OVERLAY ON OFF ======
     function on(element) {
