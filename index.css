@@ -93,6 +93,83 @@
     font-weight:400
 }
 
+/** prejects **/
+#project{
+    width: 95%;
+    margin: auto;
+    border: 1px solid transparent;
+    align-items: center
+}
+
+#project h3{
+    margin:10px 10px 30px 10px;
+    color:#181b2f;
+
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:25px;
+    font-weight: 500;
+}
+
+#project > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#project > div > div{
+    align-items: center;
+    border:1px solid transparent;
+    width: 350px; height: 300px;
+    margin:10px; display: flex;
+    flex-direction: column
+}
+#project > div > div> span{
+    font-size: 70px ;
+    color: #00adef
+}
+
+.project_title{
+    color:#182973;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:20px;
+    font-weight:400
+}
+
+.project_desc{
+    padding: 10px; color:#182973;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:13px;
+    font-weight:200
+}
+
+.project_tech{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center
+}
+
+.project_tech span{
+    background: #dfe2e5;
+    color:#4f5469;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 2px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:15px;
+    font-weight:900;
+}
+#project > div > div div{
+    padding: 10px 20px;
+    color:#00adef;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 /** overlay **/
 #overlay {

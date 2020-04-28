@@ -11,82 +11,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Quick Presentation</title>
     <style>
-        #project{
-            width: 900px;
-            margin: auto;
-            border: 1px solid transparent;
-            align-items: center
-        }
 
-        #project h3{
-            margin:10px 10px 30px 10px;
-            color:#181b2f;
-
-            font-family: 'Noto Serif JP', sans-serif;
-            font-size:25px;
-            font-weight: 600;
-        }
-
-        #project > div{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        #project > div > div{
-            align-items: center;
-            border:1px solid transparent;
-            width: 350px; height: 300px;
-            margin:10px; display: flex;
-            flex-direction: column
-        }
-        #project > div > div> span{
-            font-size: 70px ;
-            color: #00adef
-        }
-
-        .project_title{
-            color:#182973;
-            font-family: 'Noto Serif JP', sans-serif;
-            font-size:20px;
-            font-weight:400
-        }
-
-        .project_desc{
-            padding: 10px; color:#182973;
-            text-align: center;
-            font-family: 'Noto Serif JP', sans-serif;
-            font-size:13px;
-            font-weight:200
-        }
-
-        .project_tech{
-            width: 100%;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            padding: 5px;
-            text-align: center
-        }
-
-        .project_tech span{
-            background: #dfe2e5;
-            color:#4f5469;
-            margin: 2px;
-            padding: 5px;
-            border-radius: 2px;
-            font-family: 'Noto Serif JP', sans-serif;
-            font-size:15px;
-            font-weight:900;
-        }
-        #project > div > div div{
-            padding: 10px 20px;
-            color:#00adef;
-            font-family: 'Noto Serif JP', sans-serif;
-            font-weight:500;
-            font-size: 16px;
-            cursor: pointer;
-        }
     </style>
 
 
@@ -109,7 +34,7 @@
         <section id="info_file"></section>
     </div>
     <section id="project">
-        <h3>Progetti</h3>
+        <section style="width: 900px; margin:auto"><h3>Progetti</h3></section>
     </section>
 </section>
 
@@ -132,11 +57,19 @@
         owner : 'setieLouis',
         items:[
             {
-                icon : 'devicon-javascript-plain',
-                title: 'Lootbill',
-                desc: 'Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing e incididunt u',
-                tags:['Java','Tdd','JUnit','Jaccoco'],
-                repository: 'LAB2_SOL'
+                icon: 'devicon-html5-plain',
+                title: 'Quick presentation',
+                desc : 'Quick presentation è un tentativo di racchiudere le informationi significative relativo alla vita lavorativa in unica pagina.',
+                tags:['VanillaJs', 'Html', 'Css'],
+                repository: 'setieLouis.github.io'
+            },
+            {
+                icon: 'devicon-nodejs-plain',
+                title: 'node serve',
+                desc : 'Questo è semplice server node per gestire per le operazione di crud per un finto social. Viene emplemntato inoltre anche la gestione dei token.',
+                tags: ['NodeJs','ExpressJs', 'Mongodb'],
+                repository: 'nodeServer'
+
             }
         ]
     }
@@ -280,7 +213,7 @@
 
     function openProject(owner, repository){
         caller(
-            'https://api.github.com/repos/'  +  owner + '/'+ repository +'/contents/README.md',
+            'https://api.github.com/repos/'  +  owner + '/'+ repository +'/contents/Readme.md',
             'GET',
             success,
             (error) => console.log(error)
@@ -333,7 +266,6 @@
 
 
     // CV OVERLAY
-
             function openFile(link)  {
 
             let  sec =  document.createElement('section');

@@ -1,4 +1,5 @@
 function caller(url , method , success, failed ){
+    console.log(url);
     fetch(url, {
         headers: {'Content-Type': 'application/json'},
         method: method})
