@@ -1,4 +1,3 @@
-
 *{
     padding:0;
     margin:0;
@@ -6,126 +5,145 @@
     /**border: 1px solid black;/**/
     font-family: 'Roboto', sans-serif;
 }
+.overflow_y_none{
+    overflow-y:hidden;
+}
 
-
-main{
-
-    width: 815px;
+/** head **/
+#head {
+    width: 900px;
     margin:auto;
-
-
-}
-
-
-
-
-/************ blocker  **************/
-.block_wrapper{
-    display:  flex;
-
-    flex-wrap:  wrap ;
-    /**border: 1px solid black;**/
-
-
-}
-
-
-.block{
-
-    margin:10px;
-    width:  250px;
-    height: 200px;
-}
-
-
-.block_item{
-    margin: 40px;
-}
-
-
-
-
-
-header{
-    width: 815px;
-    margin:auto;
-}
-
-.sec_title{
-    font-size:25px;
-}
-
-
-.profile_wrapper{
+    padding: 20px;
+    border:1px solid transparent;
     display:flex;
+    justify-content: space-between;
+    align-items: center
+}
+#head h1{
+    color:#181b2f;
+    font-family: 'Noto Serif JP',
+    sans-serif; font-size:16px;
+    font-weight:900
+}
+#head span{
+    margin:0px 10px;
+    font-size:25px;
+    text-decoration:none;
+    color:#181b2f;
+    cursor: pointer;
+}
+
+/** Presentation **/
+#info{
+    width: 700px;
+    margin:auto;
+}
+#info_name{
+    align-items: center;
+    border:1px solid transparent;
+    margin: 20px;  display: flex;
+    flex-direction: column
+}
+#info_name img{
+    border: 5px solid #dcdde3;
+    border-radius:50%;
+    width:120px;
+    height:120px;
+}
+#info_name_name {
+    color:#182973;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:20px;
+    font-weight:400
+}
+#info_name_text {
+    padding: 10px;
+    color:#182973;
+    text-align: justify;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:15px;
+    font-weight:200
+}
+#info hr{
+    width: 400px; margin: auto; color:#d5d7d9
+}
+#info_file{
+    display: flex;
+    border:1px solid transparent;
     justify-content: center;
-    align-items:center;
-    width:144px;
-    margin: 10px;
-    height:200px;
+    margin:10px 0px 0px 0px;
 }
 
-.profile_foto{
-    width:144px;
-    height:180px;
-    border-radius: 80px;
-
-}
-.text{
-    width:500px; margin: 10px;  height:200px;
+#info_file  div{
+    align-items: center;
+    border:1px solid transparent;
+    margin:20px; display: flex;
+    flex-direction: column
 }
 
+#info_file span{
+    font-size: 70px ;
+    cursor:pointer;
+    color: #00adef
+}
+#info_file p{
+    color:#182973;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size:16px;
+    font-weight:400
+}
 
-/********* Overlay classs ********/
-.overlay {
+
+/** overlay **/
+#overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
     height: 100%;
-    width: 0%;
-    position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    border:1px solid black;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 4;
 }
-#overlay_content{
-    height: 100%;
-    border:1px solid black;
-    background-color: #fff;
+#closebtn{
+    border: none;
+    border-radius:50%;
+    padding:10px 15px;
+
+    position: fixed;
+    z-index:4;
+    cursor: pointer;
 }
-
-
-.y_none{
-    overflow-y: hidden;
-}
-
-/** pdf overlay **/
-.pdf_wrapper{
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.iframe_wrapper{
-    width: 90%;
-    height: 90%;
-}
-
-/** video overlay **/
-.video_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100% ;
-
-}
-
-.video_wrapper p{
-    width:800px;
-    margin-bottom:10px;
+.closebtn_projet{
+    background: #4f5469;
     color: #fff;
+    box-shadow: 0 0 10px 1px #777;
+    -webkit-box-shadow: 0 8px 20px -6px #777;
+    -moz-box-shadow: 0 8px 20px -6px #777;
+    position: fixed;
+    bottom: 2%;
+    right: 50%;
+}
+.closebtn_pdf{
+    background: #fff;
+    color: #4f5469 ;
+    box-shadow: 0 0 10px 1px #777;
+    -webkit-box-shadow: 0 8px 20px -6px #777;
+    -moz-box-shadow: 0 8px 20px -6px #777;
+    top: 60px;
+    right:40px;
+    z-index:4
+}
+
+#closebtn span{
+    font-size: 25px;
+}
+
+#overlay_content{
+
+    width: 100%;
+    height: 100%;
+    background: #fff
 }

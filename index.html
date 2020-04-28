@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
 
+    <link href="index.css" rel="stylesheet">
     <link href="githubMD.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
@@ -14,70 +15,7 @@
     <title>Quick Presentation</title>
 
     <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-            /**border: 1px solid black;/**/
-            font-family: 'Roboto', sans-serif;
-        }
-        .overflow_y_none{
-            overflow-y:hidden;
-        }
 
-        /** overlay **/
-        #overlay {
-            position: absolute;
-            display: none;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #fff;
-            z-index: 4;
-        }
-        #closebtn{
-            border: none;
-            border-radius:50%;
-            padding:10px 15px;
-
-            position: fixed;
-            z-index:4;
-            cursor: pointer;
-        }
-        .closebtn_projet{
-            background: #4f5469;
-            color: #fff;
-            box-shadow: 0 0 10px 1px #777;
-            -webkit-box-shadow: 0 8px 20px -6px #777;
-            -moz-box-shadow: 0 8px 20px -6px #777;
-            position: fixed;
-            bottom: 2%;
-            right: 50%;
-        }
-        .closebtn_pdf{
-            background: #fff;
-            color: #4f5469 ;
-            box-shadow: 0 0 10px 1px #777;
-            -webkit-box-shadow: 0 8px 20px -6px #777;
-            -moz-box-shadow: 0 8px 20px -6px #777;
-            top: 60px;
-            right:40px;
-            z-index:4
-        }
-
-        #closebtn span{
-            font-size: 25px;
-        }
-
-        #overlay_content{
-
-            width: 100%;
-            height: 100%;
-            background: #fff
-        }
     </style>
 
 
@@ -87,34 +25,27 @@
 <body id="main_body">
 <section id="main">
 
+    <div id="head"><h1 style="">Quick Presentation</h1></div>
 
-    <div style="width: 900px;margin:auto; padding: 20px; border:1px solid transparent; display:flex; justify-content: space-between; align-items: center">
-        <h1 style="color:#181b2f; font-family: 'Noto Serif JP', sans-serif; font-size:16px; font-weight:900">Quick Presentation</h1>
-        <div style=" border:1px solid transparent;">
-            <a href="http//:www.google.com" style="margin:0px 10px; font-size:25px; text-decoration:none; color:#181b2f;  "> <i class="fab fa-linkedin"></i></a>
-            <a href="http//:www.google.com" style="margin:0px 10px; font-size:25px; text-decoration:none; color:#181b2f;"><i class="fas fa-paper-plane"></i></a>
-        </div>
-    </div>
-
-    <div style="width: 700px;margin:auto;">
-        <section style="align-items: center; border:1px solid transparent; margin: 20px;  display: flex; flex-direction: column">
-            <img src="img/pro.jpg" style="border: 5px solid #dcdde3; border-radius:50%; width:120px; height:120px;" alt="Avatar">
-            <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:20px; font-weight:400">Setie Louis Adjambri</p>
-            <p style="padding: 10px; color:#182973; text-align: justify; font-family: 'Noto Serif JP', sans-serif;  font-size:15px; font-weight:200">
+    <div id="info">
+        <section id="info_name">
+            <img src="img/pro.jpg"  alt="Avatar">
+            <p id="info_name_name">Setie Louis Adjambri</p>
+            <p id="info_name_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
             </p>
         </section>
-        <hr style="width: 400px; margin: auto; color:#0019bf">
+        <hr>
 
-        <section style="display: flex;border:1px solid transparent; justify-content: center; margin:10px 0px 0px 0px;">
-            <div style="align-items: center;  border:1px solid transparent; margin:20px; display: flex; flex-direction: column">
-                <span id="f1" style="font-size: 70px ;cursor:pointer; color: #00adef"><i class="fas fa-file"></i></span>
-                <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:16px; font-weight:400">Curriculum vitae</p>
+        <section id="info_file">
+            <!--div>
+                <span id="f1"><i class="fas fa-file"></i></span>
+                <p>Curriculum vitae</p>
             </div>
-            <div style="align-items: center; border:1px solid transparent;  margin:20px; display: flex; flex-direction: column">
-                <span style="font-size: 70px ;cursor:pointer; color: #00adef"><i class="fas fa-file-video"></i></i></span>
-                <p style=" color:#182973; font-family: 'Noto Serif JP', sans-serif; font-size:16px; font-weight:400">Video presentation</p>
-            </div>
+            <div>
+                <span><i class="fas fa-file-video"></i></i></span>
+                <p>Video presentation</p>
+            </div-->
         </section>
     </div>
 
@@ -210,6 +141,99 @@
 <script src="httpCaller.js"></script>
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 <script type="text/javascript">
+    /**
+     *
+     <div>
+     <span><i class=""></i></i></span>
+     <p></p>
+     </div>
+     **/
+
+    // PRESENTAZIONE FILE
+    const files=[
+            {
+                icon: 'fas fa-file',
+                value: 'Curriculum vitae',
+                link: 'L01.pdf'
+            },
+           /* {
+                icon: 'fas fa-file-video',
+                value: 'Video presentation',
+                link: ''
+            }*/
+        ]
+
+    function addFile() {
+        const info = document.getElementById('info_file');
+        for(let i = 0; i < files.length; i++){
+
+
+            const div = document.createElement('div');
+            if(files[i].link !== undefined && files[i].link.length > 0)
+                div.setAttribute('onclick', 'openFile("'+ files[i].link +'")' )
+            const span = document.createElement('span');
+            const itag = document.createElement('i');
+            itag.setAttribute('class', files[i].icon)
+            const p = document.createElement('p');
+
+            span.append(itag);
+            p.append(files[i].value)
+            div.append(span)
+            div.append(p)
+            info.append(div);
+        }
+    }
+    addFile();
+
+
+
+   // HEADER RIGHT LINKS
+    const socials = [
+        {
+            icon: 'fab fa-linkedin',
+            social: "linkedin",
+            link : "https://www.linkedin.com/in/setie-louis-adjambri-3b32ba6a/",
+        },
+        {
+            icon: 'fas fa-paper-plane',
+            social: "mail",
+            link : "adjams@live.it",
+        }
+    ]
+
+    function addHeadSocial(){
+        let div = document.createElement('div');
+
+        for(let i=0 ; i < socials.length; i++){
+
+            const social = socials[i];
+            const  span = document.createElement('span');
+            span.setAttribute('onclick', 'linkSender("'+ social.link + '")');
+            const itag = document.createElement('i');
+            itag.setAttribute('class',social.icon)
+            span.append(itag);
+            div.append(span);
+        }
+
+        document.getElementById('head').append(div);
+    }
+
+    //link sender
+    function linkSender(link){
+        if(ValidateEmail(link)){
+            const win =window.open('mailto:' + link);
+            console.log(window);
+
+        }
+        else window.open(link);  // open(link, "_blank"); //  location(link);
+    }
+    function ValidateEmail(mail) {return  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail);}
+
+   addHeadSocial();
+
+
+
+
 
     // PROJECT OVERLAY
     let p1 = document.getElementById("p1");
@@ -270,8 +294,7 @@
 
     // CV OVERLAY
 
-    document.getElementById('f1')
-        .addEventListener('click' , () => {
+            function openFile(link)  {
 
             let  sec =  document.createElement('section');
 
@@ -294,7 +317,7 @@
                 main.style.display='none';
             });
             on(overlay)
-        })
+        };
 
     /**
      *   <section style="height: 100%">
