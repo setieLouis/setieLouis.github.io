@@ -8,7 +8,11 @@
 .overflow_y_none{
     overflow-y:hidden;
 }
+/** main **/
+#main{
+    margin-bottom: 50px;
 
+}
 /** head **/
 #head {
     width: 900px;
