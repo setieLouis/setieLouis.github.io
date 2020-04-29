@@ -1,4 +1,4 @@
-#Quick Presentation
+# Quick Presentation
 
 ## Cos'è
 Quick presentation è un tentativo di racchiudere le informationi significative 
