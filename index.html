@@ -3,334 +3,264 @@
 <head>
     <meta charset="utf-8">
     <link href="index.css" rel="stylesheet">
-    <link href="githubMD.css" rel="stylesheet">
+    <link href="css/githubMD.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/889d8bc543.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Quick Presentation</title>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
     <style>
+
+
+        .b13{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .b13_btn{
+            text-align: center;
+            margin: 5px;
+            min-width: 200px;
+            line-height: 36px;
+            border-radius: 4px;
+            overflow: visible;
+            padding: 1rem 4.5rem;
+            background: #fff;
+            color: #599eee;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid #599eee;
+            font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+        }
+
+
+        .test_main{
+            border: 1px solid black;
+        }
+
+        .test_main h1, .test_main h2{
+            padding-bottom: 0.3em;
+            border-bottom: 1px solid #eaecef;
+        }
+
+        .test_main h2{
+            font-size: 2rem;
+        }
 
     </style>
 
 
+
 </head>
 
-
 <body id="main_body">
-<section id="main">
-
-    <div id="head"><h1 style="">Quick Presentation</h1></div>
-    <div id="info">
-        <section id="info_name">
-            <img src="img/pro.jpg"  alt="Avatar">
-            <p id="info_name_name">Setie Louis Adjambri</p>
-            <p id="info_name_text">
-                &ldquo;<i>
-                    Un tempo gli operai non erano servi. Lavoravano. Coltivavano un onore, assoluto, come si addice a un onore. La gamba di una sedia doveva essere ben fatta. Era naturale, era inteso. Era un primato.
-                    Non occorreva che fosse ben fatta per il salario, o in
-                    modo proporzionale al salario. Non doveva essere ben fatta per il padrone, né per gli intenditori, né per i clienti del padrone.
-                    Doveva essere ben fatta di per sé, in sé, nella sua stessa natura.
-                    Una tradizione venuta, risalita dal profondo della razza,
-                    una storia, un assoluto, un onore esigevano che quella gamba di sedia
-                    fosse ben fatta. E ogni parte della sedia fosse ben fatta.
-                    E ogni parte della sedia che non si vedeva era lavorata con la medesima perfezione delle parti che si vedevano. Secondo lo stesso principio delle cattedrali.
-                    E sono solo io — io ormai così imbastardito — a farla adesso tanto lunga. Per loro, in loro non c’era neppure l’ombra di una riflessione.
-                    Il lavoro stava là. Si lavorava bene. Non si trattava di essere visti o di non essere visti. Era il lavoro in sé che doveva essere ben fatto (Ch. Peguy, L'argento)
-                </i>&rdquo;<br><br>
-                Prendo in prestito le parole dello scrittore francese Charles Péguy perché riescono a esprimere, meglio di quanto io stesso sia in grado di fare, il mio pensiero sul ruolo e sul senso del lavoro nella mia vita professionale e sociale
-            </p>
-        </section>
-        <hr>
-        <section id="info_file"></section>
-    </div>
-    <section id="project">
-        <section style="width: 900px; margin:auto"><h3>Progetti</h3></section>
-    </section>
+<section id="main_section">
+    <div id="main_div" class="markdown-body"/>
 </section>
 
-<section id="overlay">
-    <div id="closebtn">
-        <span><i class="fas fa-times" aria-hidden="true"></i>
-        </span>
+<section class="question">
+
+    <div>
+
     </div>
-    <div id="overlay_content"></div>
 </section>
+
+
+<!--section class="markdown-body" >
+
+
+    <div>
+        <h2>Question 2</h2>
+        <h3>Qu’est-ce qu’une API ?</h3>
+
+        <div class="form-check mia">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
+                Mercury
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" >
+            <label class="form-check-label">
+                Earth
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
+                Earth
+            </label>
+        </div>
+
+    </div>
+
+
+    <div>
+        <h2>Question 2</h2>
+        <h3>Qu’est-ce qu’une API ?</h3>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Default radio
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Default checked radio
+            </label>
+        </div>
+    </div>
+
+
+
+</section>
+
+<div class="b13">
+    <div class="b13_btn">PREVIOUS</div>
+    <div class="b13_btn">NEXT</div>
+</div-->
 
 <script src="https://cdn.jsdelivr.net/remarkable/1.7.1/remarkable.min.js"></script>
-<script src="projects.js"></script>
-<script src="httpCaller.js"></script>
+<script src="js/question_handler.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/httpCaller.js"></script>
+<script src="js/lesson_page_handler.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/pages_loader.js"></script>
 <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 <script type="text/javascript">
 
-    // PROJECTS
-    const projectList = {
-        owner : 'setieLouis',
-        items:[
-            {
-                icon: 'devicon-html5-plain',
-                title: 'Quick presentation',
-                desc : 'Quick presentation è un tentativo di racchiudere le informationi significative relativo alla vita lavorativa in unica pagina.',
-                tags:['VanillaJs', 'Html', 'Css'],
-                repository: 'setieLouis.github.io'
-            },
-            {
-                icon: 'devicon-nodejs-plain',
-                title: 'node server',
-                desc : 'Questo è semplice server node per gestire per le operazione di crud per un finto social. Viene emplemntato inoltre anche la gestione dei token.',
-                tags: ['NodeJs','ExpressJs', 'Mongodb'],
-                repository: 'nodeServer'
-
-            }
-        ]
-    }
-
-    function addProjects(){
-        const divWrapper = document.createElement('div');
-        const items = projectList.items;
-
-       for(let i = 0; i < items.length; i++){
-            const div = document.createElement('div');
-            const span = document.createElement('span');
-            const itag = document.createElement('i');
-            itag.setAttribute('class', items[i].icon );
-            span.append(itag);
-            const p1 = document.createElement('p');
-            p1.setAttribute('class', 'project_title');
-            p1.append(items[i].title);
-
-            const p2 = document.createElement('p');
-            p2.setAttribute('class', 'project_desc');
-            p2.append(items[i].desc);
-
-            const p3 = document.createElement('p');
-            p3.setAttribute('class', 'project_tech');
-
-            const tags = items[i].tags
-            let line ="";
-            for (let j = 0; j < tags.length;  j++){
-                const span2 = document.createElement('span');
-                span2.append(tags[j])
-                p3.append(span2);
-            }
+ let lessons_pages;
+ let demands_pages;
 
 
 
-            const button = document.createElement('div');
-            button.append('Read more')
-            button.setAttribute('onclick', 'openProject("' + projectList.owner +   '","' + items[i].repository + '")');
-            div.append(span);
-            div.append(p1);
-            div.append(p2);
-            div.append(p3);
-            div.append(button);
-            divWrapper.append(div);
-        }
-        document.getElementById('project').append(divWrapper);
-    }
+ const initCallback = function (les, dem) {
 
-    addProjects();
+    dem.forEach(d => {
+        les.push(d)
+    })
 
-    // PRESENTAZIONE FILE
-    const files=[
-            {
-                icon: 'fas fa-file',
-                value: 'Curriculum vitae',
-                link: 'CV_Setie_Louis_Adjambri.pdf'
-            },
-           /* {
-                icon: 'fas fa-file-video',
-                value: 'Video presentation',
-                link: ''
-            }*/
-        ]
-
-    function addFile() {
-        const info = document.getElementById('info_file');
-        for(let i = 0; i < files.length; i++){
-
-
-            const div = document.createElement('div');
-            if(files[i].link !== undefined && files[i].link.length > 0)
-                div.setAttribute('onclick', 'openFile("'+ files[i].link +'")' )
-            const span = document.createElement('span');
-            const itag = document.createElement('i');
-            itag.setAttribute('class', files[i].icon)
-            const p = document.createElement('p');
-
-            span.append(itag);
-            p.append(files[i].value)
-            div.append(span)
-            div.append(p)
-            info.append(div);
-        }
-    }
-    addFile();
+     pageLoadHandler(les);
+ }
 
 
 
-   // HEADER RIGHT LINKS
-    const socials = [
-        {
-            icon: 'fab fa-github',
-            title: 'gitHub',
-            link: 'https://github.com/setieLouis/'
-        },
-        {
-            icon: 'fab fa-linkedin',
-            title: "linkedin",
-            link : "https://www.linkedin.com/in/setie-louis-adjambri-3b32ba6a/",
-        },
-        {
-            icon: 'fas fa-paper-plane',
-            title: "mail",
-            link : "adjams@live.it",
-        }
-    ]
 
-    function addHeadSocial(){
-        let div = document.createElement('div');
-
-        for(let i=0 ; i < socials.length; i++){
-
-            const social = socials[i];
-            const  span = document.createElement('span');
-            span.setAttribute('onclick', 'linkSender("'+ social.link + '")');
-            span.setAttribute('title', social.title);
-
-            const itag = document.createElement('i');
-            itag.setAttribute('class',social.icon)
-            span.append(itag);
-            div.append(span);
-        }
-
-        document.getElementById('head').append(div);
-    }
-
-    //link sender
-    function linkSender(link){
-        if(ValidateEmail(link)){
-            const win =window.open('mailto:' + link);
-            console.log(window);
-
-        }
-        else window.open(link);  // open(link, "_blank"); //  location(link);
-    }
-    function ValidateEmail(mail) {return  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail);}
-
-   addHeadSocial();
+ pageHandlerEnty("https://api.github.com/repos/setieLouis/setieLouis.github.io/contents/corsi",initCallback )
 
 
 
-    function openProject(owner, repository){
-        caller(
-            'https://api.github.com/repos/'  +  owner + '/'+ repository +'/contents/Readme.md',
-            'GET',
-            success,
-            (error) => console.log(error)
-        );
-    };
-
-    document.getElementById("closebtn")
-        .addEventListener("click", () =>{
-            const  main = document.getElementById('main');
-            const overlay=  document.getElementById("overlay");
-            on(main)
-            off(overlay, ()=>{
-                document.getElementById('closebtn').removeAttribute('class');
-                document.getElementById("overlay").style.display='none';
-                document.getElementById("main_body").removeAttribute('class');
-                let overContent =  document.getElementById("overlay_content");
-                let childs = overContent.childNodes;
-                console.log(childs)
-                for(let i = 0; i<= childs.length; i++ ){
-                    console.log(childs[i])
-                    overContent.removeChild (childs[i]);
-                }
-            });
-        });
-
-    const success = function(data){
-        let resp= data.json()
-            .then(data => {
-                let sec = document.createElement('section');
-                sec.setAttribute('style', 'margin:20px');
-                let div = document.createElement('div');
-                div.setAttribute('class','markdown-body')
-                let mkd = utf8Base64Decoder(data.content);
-                let body = md.render(mkd);
-                console.log(body)
-                div.innerHTML = body;
-                sec.append(div)
-
-                document.getElementById('overlay_content').append(sec);
-                document.getElementById('closebtn').setAttribute ('class', 'closebtn_projet');
-                const  main = document.getElementById('main');
-                const overlay=  document.getElementById("overlay");
-
-                off(main,() => {
-                    main.style.display='none';
-                });
-                on(overlay);
-            });
-    };
 
 
-    // CV OVERLAY
-            function openFile(link)  {
+//    const previous = {
+//        owner : 'setieLouis',
+//        courseDirectory: "corsi",
+//        fileName : "corso",
+//        index: 0,
+//    }
+//
+//    const nextPage = {
+//        owner : 'setieLouis',
+//        courseDirectory: "corsi",
+//        fileName : "corso",
+//        index: 1,
+//    }
+//
+//    window.addEventListener('load', function () {
+//        openProject("setieLouis","setieLouis.github.io",nextPage.courseDirectory, nextPage.index,nextPage.fileName);
+//    })
+//
+//
+//    // PROJECTS
+//    const projectList = {
+//        owner : 'setieLouis',
+//        items:[
+//            {
+//                icon: 'devicon-html5-plain',
+//                title: 'Quick presentation',
+//                desc : 'Quick presentation è un tentativo di racchiudere le informationi significative relativo alla vita lavorativa in unica pagina.',
+//                tags:['VanillaJs', 'Html', 'Css'],
+//                repository: 'setieLouis.github.io'
+//            },
+//            {
+//                icon: 'devicon-nodejs-plain',
+//                title: 'node server',
+//                desc : 'Questo è semplice server node per gestire per le operazione di crud per un finto social. Viene emplemntato inoltre anche la gestione dei token.',
+//                tags: ['NodeJs','ExpressJs', 'Mongodb'],
+//                repository: 'nodeServer'
+//
+//            }
+//        ]
+//    }
+//
+//    function openProject(owner, repository,courseDirectory, index,courseName){
+//        caller(
+//            'https://api.github.com/repos/'  +  owner + '/'+ repository +'/contents/'+ courseDirectory + '/'+ index + '_'+ courseName + '.md',
+//            'GET',
+//            success,
+//            (error) => console.log(error)
+//        );
+//    }
+//
+//
+//    const success = function(data, url){
+//         data.json()
+//            .then(data => {
+//
+//                previous.index = nextPage.index - 1;
+//                nextPage.index += 1;
+//
+//
+//                let mkd = utf8Base64Decoder(data.content);
+//
+//                let body = md.render(mkd);
+//
+//                let divMain = handleQuestion(body);
+//                divMain.setAttribute("id", "main_div")
+//                divMain.setAttribute("class", "markdown-body")
+// document.getElementById("main_section").append(divMain);
+//
+///*                let btnRow = document.createElement('div');
+//                btnRow.setAttribute('class','b13')
+//
+//                let previousBtn = document.createElement('div');
+//                previousBtn.setAttribute('class','b13_btn')
+//                previousBtn.setAttribute('onclick', 'openProject("' +'setieLouis' + '","' + 'setieLouis.github.io' + '","'  + previous.courseDirectory + '","' + previous.index +  '","' +previous.fileName   +'")');
+//                previousBtn.innerHTML="PREVIOUS"
+//                btnRow.append(previousBtn);
+//
+//
+//                let nextBtn = document.createElement('div');
+//                nextBtn.setAttribute('class','b13_btn')
+//                nextBtn.setAttribute('onclick', 'openProject("' +'setieLouis' + '","' + 'setieLouis.github.io' + '","'  + nextPage.courseDirectory + '","' + nextPage.index +  '","' +nextPage.fileName   +'")');
+//                nextBtn.innerHTML="NEXT"
+//                btnRow.append(nextBtn);*/
+//
+//
+//                document.getElementById("main_section").append(divMain);
+//
+//
+//            });
+//    }
+//
+//
+//
+//
 
-            let  sec =  document.createElement('section');
-
-            sec.setAttribute('style', 'height:100%; width:100%');
-
-            let frame = document.createElement('iframe') ;
-            frame.setAttribute('src', link +'#page=1&zoom=120');
-            frame.setAttribute('width',   '100%');
-            frame.setAttribute('height',  '100%');
-            frame.setAttribute('style','border: none;');
-
-
-            sec.append(frame);
-            document.getElementById('overlay_content').append(sec);
-            document.getElementById('closebtn').setAttribute ('class', 'closebtn_pdf');
-            document.getElementById('main_body').setAttribute('class','overflow_y_none')
-            const  main = document.getElementById('main');
-            const overlay=  document.getElementById("overlay");
-            off(main, () => {
-                main.style.display='none';
-            });
-            on(overlay)
-        };
-
-    //====== OVERLAY ON OFF ======
-    function on(element) {
-        let overlay=  document.getElementById("overlay");
-        element.style.opacity = 0.0;
-        element.style.display = "block";
-        fadeIn(element,0);
-    }
-
-    function off(element, callback ) {
-
-        fadeOut(element,1,callback);
-    }
-
-    //====== FADE IN OUT ======
-    function fadeIn(element,value) {
-        value += 0.03;
-        element.style.opacity= value;
-        if (value<1){setTimeout(function(){fadeIn(element,value);}, 10);}
-    }
-    function fadeOut(element,val,callback) {
-        val -=0.03;
-        element.style.opacity= val;
-        if (val>0){setTimeout(function(){fadeOut(element,val,callback);}, 10);}
-        else {
-            if (callback)
-                callback();
-        }
-    }
 </script>
 </body>
 </html>

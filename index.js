@@ -29,12 +29,11 @@ document.getElementById("p1").addEventListener('click', function () {
 
 
 
+
+
 //**************** Overlay *************************************
 function overlay(element) {
-   let overlay =  document.getElementById("overlay_content");
 
-   // insert chiild
-    overlay.append(element);
 
    //open
    openOverlay();

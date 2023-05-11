@@ -12,6 +12,9 @@ di consultazione delle informazione di un canditato tramite questi punti
  * Mostrare oltre al Curriculum altre informazioni tra cui i progetti personali 
  * Un link contenente informazione  per i diversi step di valutazione del candidato
 
+
+---
+
 ## Tecnologie e Risorse 
 Le principali tecnologie usate per la costruzione di questa pagina sono le seguenti;  
  * [vanillaJs]('http://vanilla-js.com/') per tutta la parte dinamica 
@@ -21,6 +24,7 @@ Le principali tecnologie usate per la costruzione di questa pagina sono le segue
  * [Font awesome]('https://fontawesome.com/')
  * [Dev icon]('https://konpa.github.io/devicon/')
  * [google font]('https://fonts.google.com/)
+ * [css style]('https://getcssscan.com/css-checkboxes-examples')
 
 ## Feature possibili 
 * Aggiugere video presentazione breve 
