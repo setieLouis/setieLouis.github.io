@@ -4,9 +4,7 @@
     margin: auto;
     padding: 40px;
     background: #fff;
-    box-shadow: 0 8px 20px -6px #777;
-    -webkit-box-shadow: 0 8px 20px -6px #777;
-    -moz-box-shadow: 0 8px 20px -6px #777;
+
 }
 
 .markdown-body .octicon {
@@ -124,7 +122,6 @@
 
 .markdown-body input {
     font: inherit;
-    margin: 0;
 }
 
 .markdown-body input {
