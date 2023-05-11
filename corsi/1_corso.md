@@ -1,9 +1,35 @@
-# Quick Presentation
 
-## Cos'è
-Quick presentation è un tentativo di racchiudere le informationi significative
-relativo alla vita lavorativa, curriculum vitae , certificati e  repository personali  in unica
-pagina, sfruttando la possibilita, data da github, di publicare gratuitamente un insieme di pagine
-e di documenti per ogni utenza.
-Quick Presentazione si prefissa l'obiettivo facilitare e velocizzare il precesso di invio di
-di consultazione delle informazione di un canditato tramite questi punti
+## Feature possibili
+* Aggiugere video presentazione breve
+* aggiungere blocco per certificati
+* aggiungere la possibilita di cambiare lingua
+* Creare un strumente web per poter creare la propria presentazione senza scrivere codice 
+
+<!-- block -->
+## Question 1
+### En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
+- [ ] Mercury
+- [ ] Venus
+- [ ] Earth (Orbit/Moon)
+- [ ] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
+
+<!-- block -->
+## Question 2
+### Qu’est-ce qu’une API ?
+- ( ) Mercury
+- ( ) Venus
+- ( ) Earth (Orbit/Moon)
+- ( ) Mars
+
+## Question 1
+### En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
