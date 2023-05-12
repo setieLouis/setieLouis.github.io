@@ -1,9 +1,7 @@
 
 # Question 
 
-<!-- block -->
-## Question 1
-### En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
+## <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] Mercury
 - [ ] Venus
 - [ ] Earth (Orbit/Moon)
@@ -14,16 +12,13 @@
 - [ ] Neptune
 - [ ] Comet Haley
 
-<!-- block -->
-## Question 2
-### Qu’est-ce qu’une API ?
+## <!--?--> Qu’est-ce qu’une API ?
 - ( ) Mercury
 - (x) Venus
 - ( ) Earth (Orbit/Moon)
 - ( ) Mars
 
-## Question 3
-### En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
+### <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] lunedi 
 - [ ] Martedi
 - [x] Mercoldi
@@ -31,8 +26,7 @@
 - [x] Sabato
 
 
-## Question 3
-### En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
+### <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] Jupiter
 - [ ] Saturn
 - [ ] Uranus
