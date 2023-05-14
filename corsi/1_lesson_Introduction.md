@@ -12,7 +12,6 @@
 - [x] Uranus
 - [ ] Neptune
 - [ ] Comet Haley
-
 <!-- /? -->
 
 
