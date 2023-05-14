@@ -1,6 +1,7 @@
 
 # Question 
 
+<!-- ? -->
 ## <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] Mercury
 - [ ] Venus
@@ -11,6 +12,8 @@
 - [x] Uranus
 - [ ] Neptune
 - [ ] Comet Haley
+<!-- /? -->
+
 
 ## <!--?--> Qu’est-ce qu’une API ?
 - ( ) Mercury
