@@ -15,7 +15,7 @@
 <!--/?-->
 
 
-## <!--?--> Qu’est-ce qu’une API ?
+## <!--?--> Qu’est-ce qu’une forever ?
 - ( ) Mercury
 - (x) Venus
 - ( ) Earth (Orbit/Moon)
