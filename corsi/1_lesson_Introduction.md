@@ -22,11 +22,9 @@
 - ( ) Earth (Orbit/Moon)
 - ( ) Mars
 
-
 <!--/?-->
 
 <!--?-->
-
 ### <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] lunedi 
 - [ ] Martedi
@@ -36,8 +34,7 @@
 
 <!--/?-->
 
-<!--/?-->
-
+<!--?-->
 ### <!--?--> En vous aidant de la documentation et en vous basant sur la réponse précédente : quelle URI correspond à sa planète natale ?
 - [ ] Jupiter
 - [ ] Saturn
