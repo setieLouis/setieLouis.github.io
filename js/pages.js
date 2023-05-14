@@ -1,3 +1,7 @@
+
+const LESSON_PAGE_TYPE = "lesson";
+const DEMAND_PAGE_TYPE = "demand";
+
 function pageHandlerEnty(endpoint, callback){
 
     caller(

@@ -1,232 +1,230 @@
 
-let response = [];
-let resonseIndex = 0;
+let allMeta = []
 
-
-function handleQuestion(body){
-
-
-    console.log("*********************************")
-    console.log("*                               *")
-    console.log("*  WELCOME TO QUESTION HANDLER  *")
-    console.log("*                               *")
-    console.log("*********************************")
-
-
-    let tmpDiv = createDiv("tmp");
-    tmpDiv.innerHTML=body
-    console.log(tmpDiv)
-    let uls = tmpDiv.querySelectorAll("ul");
-    return core(uls)
+function questionMeta(index){
+    return {
+        text: "",
+        index: index,
+        haveChecked: 0,
+        response: [] // list of number
+    }
 }
 
-function addQuestionData(questionData ){
-    response[resonseIndex++] = questionData;
+function secondOne(body){
+    let  div = createDiv("");
+    div.innerHTML= body
+
+    let list = div.querySelectorAll("p")
+
+    handleTitle(div,list)
+    console.log(allMeta)
+    return div;
 }
 
-function createTitle(ul){
+
+const boxStateListener = function(event){
+
+    let index = parseInt(event.target.id[0])
+    let metadata = allMeta[index]
+
+    if (event.target.checked){
+        metadata.haveChecked += 1
+    }else {
+        metadata.haveChecked -= 1
+    }
+}
+
+const radioStateListener = function(event){
+
+    let index = parseInt(event.target.id[0])
+    let metadata = allMeta[index]
+    if (metadata.haveChecked == 0)
+        metadata.haveChecked++
+
+    console.log(allMeta)
+}
+
+
+function isEnder(value) {
+    let pattern = /<!--\/\?-->/
+    return pattern.test(value)
+}
+
+function isQuestion(value){
+
+    let pattern = /<!--\?-->/
+    return pattern.test(value)
+}
+
+function removeQuestionTag(value){
+
+    return value.replace(/<!--\?-->/, "")
+}
+
+function ender(element) {
+
+    return element.nodeName == 'P' &&  isEnder(element.textContent);
+}
 
 
 
-    let div = createDiv("title")
-    let ele = ul.previousSibling
+function searchForUls(h) {
+
+    let metadata = questionMeta(allMeta.length);
+    h.style.display = 'none'
+
+    let element = h.nextSibling
+    let index = 0;
     let flag = true
-    let index = 0
-    while(flag){
 
-        if (index < 30 && ele.innerHTML != undefined) {
+   while (index <= 30 && flag){
 
-            let tmp = ele;
-            ele = ele.previousSibling
-            flag = doSome(tmp, div)
-        } else {
-            ele = ele.previousSibling
-        }
+        let currElement = element;
+        element = element.nextSibling
 
-        if (ele == undefined ) {
-            flag = false
-        }
-    }
+        if (currElement == null)
+            continue
 
-    return div
+       if (ender(currElement)){
+           currElement.style.display= 'none'
+           break
+       }
+       handlingH(currElement, metadata)
+       handlingUl(currElement,metadata)
+
+       index++;
+   }
+
+   allMeta.push(metadata);
 }
+function handlingH(currElement, metadata) {
 
-
-function doSome(tmp, div){
-
-    let content = tmp.innerHTML;
-
-    let flag = containCredit(content)
-
-    if (flag) {
-
-        let credit =  retrieveCredit(content);
-
-        content = removeCredit(content)
-        tmp.innerHTML = content;
-
-
-        data = createQuestionData();
-        data.question = content;
-        data.credit = credit
-
-
-        addQuestionData(data)
+    if (/^H[1-6]/.test(currElement.nodeName) && isQuestion(currElement.textContent)){
+        // do some thing with question
+        let content = removeQuestionTag(currElement.textContent);
+        metadata.text = content;
+        currElement.textContent =  content;
     }
-
-    div.insertBefore(tmp, div.firstChild)
-
-    return flag;
 }
 
 
 
 
-function core(uls){
 
-    let questionDiv = createDiv("question_main")
 
-    for(let i = 0; i < uls.length; i++){
 
-        let wrapper = createDiv("question_wrap")
 
-        let ul =  uls[i];
+function handlingUl(currElement, metadata){
 
-        let title = createTitle(ul)
-
-        let childs = ul.childNodes;
-
-        console.log(childs.length);
+    if (currElement.nodeName == "UL"){
+        let liIndex = 0;
+        let df = createDiv("single_question_response")
+        let childs = currElement.childNodes;
 
         for (let j = 0; j < childs.length; j++) {
             let node = childs[j];
 
             if ("li".normalize() === node.nodeName.toLowerCase().normalize()) {
 
-                let content = node.textContent;
-                let checkBoxFlag = isCheckBox(content);
-                let OptionsFlag = isOptions(content)
-
-                if(checkBoxFlag){
-
-                    let newContent = formatCheckBox(content)
-
-                    if (newContent.length == 0)
-                        continue
-
-                    wrapper.append(createCheckBox(newContent));
-
-                } else if (OptionsFlag) {
-
-                    let newContent = formatOption(content)
-
-                    if (newContent.length == 0)
-                        continue
-
-                    wrapper.append(createOption(newContent));
-
-                }
-
+                df.append(formatInput(node.textContent,metadata, liIndex))
+                liIndex++
             }
         }
-
-
-        wrapper.insertBefore(title, wrapper.firstChild)
-        //document.querySelectorAll("body ul")[0].remove();
-
-        questionDiv.append(wrapper);
-
+        currElement.replaceWith(df)
     }
+}
 
-    return questionDiv;
+function handleTitle(div, list){
+
+   list.forEach(h => {
+       let text = h.textContent;
+
+       if (isQuestion(text)){
+
+           searchForUls(h)
+       }
+   })
 
 }
 
-console.log(response)
 
+
+
+
+function formatInput(content, metadata, currIndex ) {
+
+    let id = '' + metadata.index + currIndex
+
+    if(isCheckBox(content)){
+
+        if (isRightCheckBox(content))
+            metadata.response.push(currIndex)
+
+        return createCheckBox(formatCheckBox(content),metadata.index, currIndex)
+
+    } else if (isOptions(content)) {
+
+        if (isRightOption(content))
+            metadata.response.push(currIndex)
+
+        return  createOption(formatOption(content),metadata.index, currIndex)
+    }
+}
+
+
+function isRightCheckBox(value) {
+    return /^\[x\]/.test(value)
+}
+
+function isRightOption(value){
+
+    return /^\(x\)/.test(value);
+}
 
 function isCheckBox(value){
 
-    let pattern = /^\[ \]/
-    return pattern.test(value);
+    return /^\[ \]/.test(value) || isRightCheckBox(value) ;
 }
 
 function isOptions(value){
 
-    let pattern = /^\( \)/
-    return pattern.test(value);
-}
-
-//
-function containCredit(value){
-
-    let pattern = /&lt;!-- [0-9] --&gt;/
-    console.log("contente is" + value)
-
-    return pattern.test(value)
+    return /^\( \)/.test(value) || isRightOption(value) ;
 }
 
 
-function retrieveCredit(value){
-
-    console.log("to retrieve" + value)
-    let num = 0;
-    let exp = value.match(/&lt;!-- [0-9] --&gt;/)
-    console.log("expression is ")
-    console.log(exp)
-    if ( exp  != null ) {
-        credit = exp[0].match(/[0-9]/)
-
-        if ( credit  != null ) {
-
-            num += parseInt(credit[0])
-        }
-    }
-
-    return num;
-
-}
 
 
-function matcher(text, pattern){
 
-    let res = text.match(pattern)
-    if (res == null ) {
-        return '0'
-    }
-
-    return rest[0]
-}
-
-function removeCredit(value){
-
-    return value.replace(/&lt;!-- [0-9] --&gt;/, "")
-}
 
 
 function formatCheckBox(value){
 
-    return value.replace(/^\[ \]/, "");
+    return value.replace(/^\[ \]/, "").replace(/^\[x\]/,"");
 }
 
 
 function formatOption(value){
 
-    return value.replace(/^\( \)/, "");
+    return value.replace(/^\( \)/, "").replace(/^\(x\)/, "");
 }
 
 
-function createCheckBox(value){
+function createCheckBox(value, id, currIndex){
 
+    let boxId = id + '' +currIndex
     //input
     let input  = document.createElement('input')
     input.setAttribute("class", "form-check-input")
     input.setAttribute("type", "checkbox")
+    input.setAttribute("name", boxId)
+    input.setAttribute("value", boxId)
+    input.setAttribute("id", boxId)
     //input.setAttribute("value", "form-check-checkbox")
 
     //label
     let label  = document.createElement('label')
     label.setAttribute("class", "form-check-label")
+    label.setAttribute("for", boxId)
     label.innerHTML= value
 
     //div
@@ -235,22 +233,27 @@ function createCheckBox(value){
 
     div.append(input)
     div.append(label)
-
+    div.addEventListener('change', boxStateListener)
     return div;
 }
 
 
-function createOption(value){
+
+
+function createOption(value, id, currIndex){
 
     //input
     let input  = document.createElement('input')
     input.setAttribute("class", "form-check-input")
     input.setAttribute("type", "radio")
-    input.setAttribute("name", "same")
+    input.setAttribute("id", ''+ id + currIndex)
+    input.setAttribute("name", id)
+    input.setAttribute("value", ''+ id + currIndex)
 
     //label
     let label  = document.createElement('label')
     label.setAttribute("class", "form-check-label")
+    label.setAttribute("for", ''+ id + currIndex)
     //input.setAttribute("for", "id_")
     label.innerHTML= value
 
@@ -261,6 +264,7 @@ function createOption(value){
     div.append(input)
     div.append(label)
 
+    div.addEventListener('change',radioStateListener)
     return div;
 }
 
@@ -269,14 +273,4 @@ function createDiv(className){
     let div  = document.createElement('div')
     div.setAttribute("class", className)
     return div
-}
-
-function createQuestionData(){
-
-    return {
-        question: "",
-        actual: [],
-        waiting: [],
-        credit: 0
-    };
 }

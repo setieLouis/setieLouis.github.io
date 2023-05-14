@@ -37,21 +37,41 @@ function btnCreator(index) {
     return btnRow;
 }
 
-const pagesLoader = function (content, index){
+function loadLesson(content, index) {
 
-    //main div
+ /*   let main_div = create_main_div()
+
+
+    main_div.innerHTML = content;
+    main_div.append(btnCreator(index))
+
+    return main_div;*/
+    return loadQuestion(content,index)
+}
+
+function loadQuestion(content, index) {
+
     let main_div = create_main_div()
-    main_div.innerHTML = md.render(content);
+    //let d = getQuestionContent(content)
 
-    let  btnRow = btnCreator(index)
+    let d = secondOne(content)
+
+    main_div.append(d)
+    return  main_div;
+}
+
+const pagesLoader = function (content, index, type){
+
+    let content_decode  = md.render(content)
 
     let section = document.getElementById("main_section")
-
     //remove all child
     section.innerHTML='';
 
-    section.append(main_div)
-    section.append(btnRow)
+    if (type === LESSON_PAGE_TYPE)
+        section.append(loadLesson(content_decode , index))
+    else
+        section.append(loadQuestion(content_decode , index))
 }
 
 function pageLoadHandler(data){
@@ -67,7 +87,7 @@ function singlePageLoder(index){
 
     getPageContent(
         pages_metadata[index].link,
-        (md_content) => pagesLoader(md_content, index)
+        md_content => pagesLoader(md_content, index, pages_metadata[index].type)
     )
 }
 
