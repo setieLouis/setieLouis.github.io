@@ -1,5 +1,6 @@
 let pages_metadata = [];
 
+
 function create_main_div() {
 
     let div = createDiv("");
@@ -23,6 +24,20 @@ function createBtn(index, value) {
     return button;
 }
 
+
+function sendBtn() {
+
+    let button  = document.createElement('button')
+    button.setAttribute("class", "send-button")
+    button.setAttribute("role", "button")
+    //button.setAttribute("onclick", "send()")
+    button.setAttribute("type", "submit")
+
+    button.textContent = "Send";
+    let btnRow = createDiv("b13");
+    btnRow.append(button)
+    return btnRow;
+}
 
 function btnCreator(index) {
 
@@ -49,15 +64,27 @@ function loadLesson(content, index) {
     return loadQuestion(content,index)
 }
 
+
+const action = function(){
+
+}
+
+
 function loadQuestion(content, index) {
 
     let main_div = create_main_div()
     //let d = getQuestionContent(content)
 
     let d = secondOne(content)
+    let form  = document.createElement('form')
+    //form.setAttribute("action", ".")
+    form.setAttribute("id", "former")
+    form.setAttribute("onSubmit", "return some();")
+    form.setAttribute("class", "markdown-body")
+    form.append(d)
+    form.append(sendBtn())
 
-    main_div.append(d)
-    return  main_div;
+    return  form;
 }
 
 const pagesLoader = function (content, index, type){

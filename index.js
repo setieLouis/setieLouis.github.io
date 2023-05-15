@@ -131,7 +131,6 @@ const success = function(data){
 
             let mkd = utf8Base64Decoder(data.content);
             let body = md.render(mkd);
-            console.log(body)
             div.innerHTML = body;
             sec.append(div)
 

@@ -264,3 +264,10 @@
 .send-button:focus {
     background-color: #64B5F6;
 }
+
+
+.required_field{
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: red;
+    display: none;
+}
