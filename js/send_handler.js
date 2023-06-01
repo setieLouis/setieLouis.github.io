@@ -1,11 +1,3 @@
-const send = function (){
-    console.log("ciao ciao ciao")
-    console.log(allMeta)
-
-
-
-}
-
 
 function checkInput() {
 
@@ -23,7 +15,6 @@ function checkInput() {
 
 function save(options, meta) {
 
-
     for (let i = 0; i < options.length; i++){
         let curr = options[i]
         if (!curr.checked)
@@ -31,8 +22,6 @@ function save(options, meta) {
 
         meta.userResponse.push(curr.value)
     }
-
-
 }
 
 function some(){
@@ -51,11 +40,6 @@ function some(){
     catch(err) {
        console.log(err)
     }
-
-    console.log(allMeta)
-
-    console.log("??????????????'")
-
     return false
 }
 
