@@ -26,11 +26,6 @@ document.getElementById("p1").addEventListener('click', function () {
 
 
 
-
-
-
-
-
 //**************** Overlay *************************************
 function overlay(element) {
 
