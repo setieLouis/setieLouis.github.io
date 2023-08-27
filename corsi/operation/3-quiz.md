@@ -1,6 +1,6 @@
 
 [input]{
-	# Questiion2
+	# Questiion1
 	whathever markdown you whan
 
 	opt{name: quetion2, response:"two"}{
@@ -14,7 +14,7 @@
 
 [input]{
 	
-	# somethinhg else
+	# Question2
 	whathever markdown you whan
 
 	box{name: quetion1, response: ["one", "three"]}{
