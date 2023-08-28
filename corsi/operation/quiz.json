@@ -1,0 +1,28 @@
+{
+    "title": "Learn operation Quiz",
+    "description": "Well you learn about addition and minus now is time to dismonstrate you undestand well what you learn",
+    "input": [
+        {
+            "quiz" : "Questiion1",
+            "subtitle": "the subtitle for opt",
+            "meta": {"name": "quetion2", "response": ["two"]},
+            "opt": [
+                {"value": "one", "label": "this is opt 1"},
+                {"value": "two", "label": "this is opt 2"},
+                {"value": "three", "label": "this is opt 3"}
+            ]
+        },
+
+        {
+            "quiz" : "Questiion2",
+            "subtitle": "some subtitle for checkbox",
+            "meta": {"name": "quetion2", "response": ["one", "three"]},
+            "box": [
+                    {"value": "one", "label": "this is box 1"},
+                    {"value": "two", "label": "this is box 2"},
+                    {"value": "three", "label": "this is box 3"},
+                    {"value": "four", "label": "this is box 4"}
+                ]
+        },
+    ]
+}
