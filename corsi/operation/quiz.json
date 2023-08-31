@@ -3,27 +3,29 @@
     "description": "Well you learn about addition and minus now is time to dismonstrate you undestand well what you learn",
     "input": [
         {
-            "quiz" : "Questiion1",
-            "subtitle": "the subtitle for opt",
-            "meta": {"name": "quetion2", "response": ["two"]},
+            "quiz" : "Angular è…",
+            "subtitle": "scegliere l'optione che secondo rappresenta meglio angular",
+            "meta": {"name": "Angular è…", "response": ["two"]},
             "type": "option",
             "items": [
-                {"value": "one", "label": "this is opt 1"},
-                {"value": "two", "label": "this is opt 2"},
-                {"value": "three", "label": "this is opt 3"}
+                {"value": "one", "label": "une librairie JavaScript"},
+                {"value": "two", "label": "un framework JavaScript"},
+                {"value": "three", "label": "une dépendance de React"},
+                {"value": "four", "label": "un nom génial pour un bar"}
             ]
         },
 
         {
-            "quiz" : "Questiion2",
-            "subtitle": "some subtitle for checkbox",
-            "meta": {"name": "quetion2", "response": ["one", "three"]},
+            "quiz" : "Le TypeScript est…",
+            "subtitle": "Attention, plusieurs réponses sont possibles.",
+            "meta": {"name": "quetion2", "response": ["one", "three", "four"]},
             "type": "checkbox",
             "items": [
-                    {"value": "one", "label": "this is box 1"},
-                    {"value": "two", "label": "this is box 2"},
-                    {"value": "three", "label": "this is box 3"},
-                    {"value": "four", "label": "this is box 4"}
+                    {"value": "one", "label": "un langage qui apporte des syntaxes supplémentaires au JavaScript"},
+                    {"value": "two", "label": "un langage avec du typage strict"},
+                    {"value": "three", "label": "un langage avec du typage dynamique"},
+                    {"value": "four", "label": "l'un des langages principaux d'Angular"},
+                    {"value": "five", "label": "du JavaScript mélangé à du HTML"}
                 ]
         }
     ]
