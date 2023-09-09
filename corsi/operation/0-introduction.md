@@ -1,5 +1,8 @@
 # Introduction 
  
+
+ [![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/hqdefault.jpg)](https://www.youtube.com/embed/<VIDEO_ID>)
+
 Oggi viviamo nell'era della digitalizione, dei computer , intelligenza artificiale. tutte queste tecnoligie sono stati possibili grazie alle chiffre  [0 1 3, 4, 5, 6, 7 8 , 9]  simboli con i quali i nostri avvi hanno avuto l'intelligenza di rappresentare il diversi basi:
 * base 10 è la rappresentazione classica 1 , 10 , 25 ..
 * base 2 , rappresentazione usata dalle macchine per rappresentare le informazione digitali  111 , 10 , 01
