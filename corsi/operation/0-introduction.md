@@ -8,6 +8,8 @@ volendo possiamo rappresentare i numeri i basi differenti e strane ad esempio la
 
 ### Numeri 
 
+![image info](https://best5.it/b5/wp-content/uploads/2015/12/Lorigine-dei-numeri2-800x400.jpg)
+
 In matematica, un numero è un modo di esprimere una quantità, oppure la posizione in un elenco di elementi, oppure il rapporto tra grandezze dello stesso tipo.[1] Il concetto di numero nasce per la necessità del conteggio, come astrazione del concetto di quantità, realizzato attraverso una corrispondenza biunivoca tra elementi di due insiemi distinti. (wikipedia)ù
 
 per approfondire [link](https://it.wikipedia.org/wiki/Numero)
