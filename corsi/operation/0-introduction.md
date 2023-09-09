@@ -18,6 +18,10 @@ per approfondire [link](https://it.wikipedia.org/wiki/Numero)
 
 ### Operazione sui Numeri
 
+![image info](https://www.elephango.com/images/RCLG/math-operations-10717.jpg)
+
+
+
 Possiamo quindi dire che un operazione matematica è un procedimento che ci permette di assiciare a due numeri dati in certo ordine un terzo numero che soddisfa determinate condizioni dettate dall'aperazione che stiamo eseguendo  (youmath)
 
 per approfondire [link](https://www.youmath.it/lezioni/algebra-elementare/lezioni-di-algebra-e-aritmetica-per-scuole-medie/1645-operazioni-tra-numeri-naturali.html)
